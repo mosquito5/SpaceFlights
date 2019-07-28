@@ -1,0 +1,31 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Flight</h2>
+  <form>
+    <div class="form-group">
+      <label for="departureTime">Departure time:</label>
+      <input type="departureTime" [(ngModel)]="flight.departureTime" placeholder="DepartureTime" name="departureTime" class="form-control" id="departureTime">
+    </div>
+
+    <div class="form-group">
+      <label for="arrivalTime">Arrival Time:</label>
+      <input [(ngModel)]="flight.arrivalTime" placeholder="Arrival Time" name="arrivalTime" class="form-control" id="arrivalTime">
+    </div>
+
+    <div class="form-group">
+      <label for="seats">Seats:</label>
+      <input [(ngModel)]="flight.seats" placeholder="Seats" name="seats" class="form-control" id="seats">
+    </div>
+
+    <div class="form-group">
+      <label for="maxSeats">Max Seats:</label>
+      <input [(ngModel)]="flight.maxSeats" placeholder="maxSeats" name="maxSeats" class="form-control" id="maxSeats">
+    </div>
+
+    <div class="form-group">
+      <label for="ticketPrice">Ticket Price:</label>
+      <input [(ngModel)]="flight.ticketPrice" placeholder="ticketPrice" name="ticketPrice" class="form-control" id="ticketPrice">
+    </div>
+
+    <button class="btn btn-success" (click)="createFlight()">Create</button>
+  </form>
+</div>

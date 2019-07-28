@@ -1,0 +1,29 @@
+<div class="col-md-6">
+  <h2>Tourist Details</h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <!--      <th class="hidden">Id</th>-->
+      <th>Id</th>
+      <th>Departure Time</th>
+      <th>Arrival Time</th>
+      <th>seats</th>
+      <th>Max seats</th>
+      <th>Ticket price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let flight of flights">
+      <!--      <td class="hidden"></td>-->
+      <td>{{flight.id}}</td>
+      <td>{{flight.departureTime}}</td>
+      <td>{{flight.arrivalTime}}</td>
+      <td>{{flight.seats}}</td>
+      <td>{{flight.maxSeats}}</td>
+      <td>{{flight.ticketPrice}}</td>
+      <td><button class="btn btn-danger" (click)="addFlightToTourist(flight)"> Add flight</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
