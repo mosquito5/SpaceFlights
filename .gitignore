@@ -29,3 +29,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+space_flights-UI/node_modules
+space_flights-UI/node
+space_flights-UI/node_tmp
